@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Framework for LLM-Assisted Smart Policing System</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="{{url_for('home')}}">
+              Home
+            </a>
+            <a class="active" href="{{url_for('about')}}">
+              About
+            </a>
+            <a href="{{url_for('model')}}">
+              Model
+            </a>
+            <a class="" href="{{url_for('prediction')}}">
+              Prediction
+            </a>
+            <a class="" href="{{url_for('index')}}">
+              Logout
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Crime Prediction
+          </span>
+        </a>
+        <div class="user_option">
+          <form class="form-inline">
+            <button class="btn  nav_search-btn" type="submit">
+              <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+            </button>
+          </form>
+          <a href="">
+            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+          </a>
+        </div>
+        <div class="name_style">
+          <h6>
+            Crime Prediction
+          </h6>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Project
+              </h2>
+            </div>
+            <p style="text-align: justify;">
+              The rise of Large Language Models (LLMs) has opened new frontiers in various domains, including law enforcement. This introduces a novel framework for a Smart Policing System enhanced by the latest advancements in LLM technology. Building on existing methodologies such as Support Vector Machines (SVM), K-Nearest Neighbors (KNN), BERT, and GPT, the proposed framework integrates GPT and XLNet to improve the efficiency and accuracy of predictive policing, crime analysis, and decision-making processes. By leveraging the advanced capabilities of GPT in understanding and generating human-like text and the contextual power of XLNet, our framework aims to offer enhanced analytical insights, and more effective resource allocation. This system not only aims to optimize operational performance but also addresses ethical considerations and privacy concerns inherent in smart policing technologies. Our framework represents a significant step towards more intelligent, adaptive, and responsive law enforcement solutions in the modern age.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <!-- <div class="stripe_design sd1"></div>
+            <div class="stripe_design sd2"></div> -->
+            <!-- <div class="stripe_design sd3"></div>
+            <div class="stripe_design sd4"></div>
+            <div class="stripe_design sd5"></div>
+            <div class="stripe_design sd6"></div> -->
+            <img src="/static/images/handcuffs-308898_1280.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  {% if message %}
+    <script>
+      alert("{{message}}")
+    </script>
+  {% endif %}
+
+  <script src="/static/js/jquery-3.4.1.min.js"></script>
+  <script src="/static/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="/static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+</body>
+
+</html>

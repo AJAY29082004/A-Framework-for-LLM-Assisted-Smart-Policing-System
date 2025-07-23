@@ -2,6 +2,15 @@
 
 This project aims to modernize and enhance policing systems using Large Language Models (LLMs) and machine learning. It leverages AI to assist in crime prediction, categorization, and communication—supporting police departments in decision-making and intelligence.
 
+Description:
+A Framework for LLM-Assisted Smart Policing System" is a full-stack machine learning application that uses GPT-3, XLNet, and traditional ML models to:
+
+- Predict the type of crime based on textual description
+- Classify incident reports using trained models (Logistic Regression, KNN, SVM, BERT)
+- Extract NLP features using LLMs (GPT, XLNet)
+- Provide an admin dashboard for managing police station data and predicting crime categories
+
+The system empowers local police with analytical tools to aid investigation and planning.
 
  🛠️ Technologies Used
 
